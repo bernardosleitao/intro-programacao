@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Atribui os parâmetros posicionais a variáveis com nomes mais claros
+NOME_PROFESSOR="$1"
+NOME_DISCIPLINA="$2"
+
+# Verifica se os dois parâmetros foram fornecidos
+if [ "$#" -ne 2 ]; then
+    echo "Uso: $0 <nome_do_professor> <nome_da_disciplina>"
+    exit 1
+fi
+
+# Exibe os dados recebidos
+echo "Nome do Professor: $NOME_PROFESSOR"
+echo "Nome da Disciplina: $NOME_DISCIPLINA"
